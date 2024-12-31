@@ -384,7 +384,7 @@
 }
 
 #executives .desc{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.4);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -393,7 +393,8 @@
     justify-content: center;
     border-radius: 15px;
     padding: 16px 0 12px 0;
-    transition-duration: 500ms;
+    transition: height 1s;
+    animation-duration: 500ms;
 }
 
 @media(max-width: 576px) {
@@ -404,12 +405,7 @@
         margin-right: auto;
     }
 }
-.convertToModal{
-    height: 100%;
-}
-.convertToDiv{
-    height: fit-content;
-}
+
 /*--------------------------------------------------------------
 # Senator Candidates
 --------------------------------------------------------------*/

@@ -29,21 +29,21 @@ function closeModal(divId) {
 // Function to show or hide candidate modal
 let genModal = document.querySelector(".general");
 genModal.addEventListener("mouseenter",()=>{
-    document.querySelector("#generalDesc").className="desc convertToModal";
+    document.querySelector("#generalDesc").style.height = "100%";
     genModal.style.scale = '1.05';
 })
 genModal.addEventListener("mouseleave",()=>{
-    document.querySelector("#generalDesc").className="desc convertToDiv";
+    document.querySelector("#generalDesc").style.height = "fit-content";
     genModal.style.scale = '1';
 })
 
 let midModal = document.querySelector(".mid");
 midModal.addEventListener("mouseenter",()=>{
-    document.querySelector("#midDesc").className="desc convertToModal";
+    document.querySelector("#midDesc").style.height = "100%";
     midModal.style.scale = '1.05';
 })
 midModal.addEventListener("mouseleave",()=>{
-    document.querySelector("#midDesc").className="desc convertToDiv";
+    document.querySelector("#midDesc").style.height = "fit-content";
     midModal.style.scale = '1';
 })
 
