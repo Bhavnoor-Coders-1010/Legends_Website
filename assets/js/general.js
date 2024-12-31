@@ -2,7 +2,7 @@ let names=['Dhruv_Misra', 'Jayant_Nagar', 'Sushant_Faujdar', 'Utkarsh_Gupta', 'V
 let POSITION = ['PRESIDENT', 'PRESIDENT', 'GENERAL SECRETARY', 'GENERAL SECRETARY', 'GENERAL SECRETARY', 'GENERAL SECRETARY','GENERAL SECRETARY','GENERAL SECRETARY','GENERAL SECRETARY'];
 let COUNCIL = ['STUDENT\'S GYMKHANA', 'STUDENT\'S GYMKHANA', 'UG CAREER AND ACADEMICS', 'UG CAREER AND ACADEMICS', 'PG CAREER AND ACADEMICS', 'PG CAREER AND ACADEMICS', 'GAMES AND SPORTS', 'MEDIA AND CULTURE', 'SCIENCE AND TECHNOLOGY']
 let cardContainingDiv=document.createElement("div");
-cardContainingDiv.className="enclosingDiv executive";
+cardContainingDiv.className="enclosingDiv executive showPopUp";
 document.querySelector("body").appendChild(cardContainingDiv);
 let idx = 0;
 for (let name in names){
@@ -73,7 +73,7 @@ for (let name in names){
 
 let names23=['Aditya_Sati', 'Anand_Mahala', 'Arihant_Satpathy', 'Divi_Pothukuchi', 'Divyaman_Pal', 'Harshul_Kamboj', 'Jaiveer_Sabharwal', 'Kishor_Kunal', 'Ravi_Arora', 'Vedant_Shekhar_Tiwari']
 cardContainingDiv=document.createElement("div");
-cardContainingDiv.className="enclosingDiv SenatorsY23";
+cardContainingDiv.className="enclosingDiv SenatorsY23 hide";
 document.querySelector("body").appendChild(cardContainingDiv);
 for (let name in names23){
     let card=document.createElement("div");
@@ -131,7 +131,7 @@ for (let name in names23){
 
 names22=['Aditya_Raj_Mishra', 'Shiva_Rath', 'Chiranshu_Kataria', 'Nikant_Yadav', 'Pratham_Sharma', 'Yash_Giri', 'Vikram_Kumar', 'Ujjawal_Agarwal']
 cardContainingDiv=document.createElement("div");
-cardContainingDiv.className="enclosingDiv SenatorsY22";
+cardContainingDiv.className="enclosingDiv SenatorsY22 hide";
 document.querySelector("body").appendChild(cardContainingDiv);
 for (let name in names22){
     let card=document.createElement("div");
