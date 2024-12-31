@@ -25,6 +25,30 @@ function closeModal(divId) {
 }
 
 
+
+// Function to show or hide candidate modal
+let genModal = document.querySelector(".general");
+genModal.addEventListener("mouseenter",()=>{
+    document.querySelector("#generalDesc").className="desc convertToModal";
+    genModal.style.scale = '1.05';
+})
+genModal.addEventListener("mouseleave",()=>{
+    document.querySelector("#generalDesc").className="desc convertToDiv";
+    genModal.style.scale = '1';
+})
+
+let midModal = document.querySelector(".mid");
+midModal.addEventListener("mouseenter",()=>{
+    document.querySelector("#midDesc").className="desc convertToModal";
+    midModal.style.scale = '1.05';
+})
+midModal.addEventListener("mouseleave",()=>{
+    document.querySelector("#midDesc").className="desc convertToDiv";
+    midModal.style.scale = '1';
+})
+
+
+
 // function open() {
 //     var x = document.getElementById("poster1");
 //     x.style.display = "block";

@@ -309,6 +309,7 @@
 #executives .col {
     padding: 0;
     margin: 0;
+    transition-duration: 500ms;
 }
 
 #executives .candidate-col{
@@ -337,7 +338,7 @@
     justify-content: center;
     
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
 }
 
@@ -350,7 +351,7 @@
 }
 
 #executives .candidate-name {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: #fff;
     text-align: center;
@@ -387,9 +388,12 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     border-radius: 15px;
     padding: 16px 0 12px 0;
+    transition-duration: 500ms;
 }
 
 @media(max-width: 576px) {
@@ -400,7 +404,12 @@
         margin-right: auto;
     }
 }
-
+.convertToModal{
+    height: 100%;
+}
+.convertToDiv{
+    height: fit-content;
+}
 /*--------------------------------------------------------------
 # Senator Candidates
 --------------------------------------------------------------*/
